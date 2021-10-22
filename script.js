@@ -23,6 +23,37 @@ var changeWidth = function(event, width) {
 	document.getElementById("images").style.columnCount = width;
 };
 
+
+var updateBackgroundColor = function(event, num) {
+  event.preventDefault();
+  if(num === 1) {
+    document.getElementById("button1").style.backgroundColor = '#4A4453';
+    document.getElementById("button2").style.backgroundColor = '#786E87';
+    document.getElementById("button3").style.backgroundColor = '#786E87';
+    document.getElementById("button4").style.backgroundColor = '#786E87';
+  }
+  if(num === 2) {
+    document.getElementById("button2").style.backgroundColor = '#4A4453';
+    document.getElementById("button1").style.backgroundColor = '#786E87';
+    document.getElementById("button3").style.backgroundColor = '#786E87';
+    document.getElementById("button4").style.backgroundColor = '#786E87';
+  }
+  if(num === 3) {
+    document.getElementById("button3").style.backgroundColor = '#4A4453';
+    document.getElementById("button1").style.backgroundColor = '#786E87';
+    document.getElementById("button2").style.backgroundColor = '#786E87';
+    document.getElementById("button4").style.backgroundColor = '#786E87';
+  }
+  if(num === 4) {
+    document.getElementById("button4").style.backgroundColor = '#4A4453';
+    document.getElementById("button1").style.backgroundColor = '#786E87';
+    document.getElementById("button2").style.backgroundColor = '#786E87';
+    document.getElementById("button3").style.backgroundColor = '#786E87';
+  }
+
+}
+
+
 // button listeners
 /*
 document.getElementById("button1").addEventListener("click", function(event) {
@@ -33,16 +64,20 @@ document.getElementById("button1").addEventListener("click", function(event) {
 
 document.getElementById("button1").addEventListener("click", function(event) {
 	changeWidth(event, '1');
+  updateBackgroundColor(event, 1);
 });
 
 document.getElementById("button2").addEventListener("click", function(event) {
 	changeWidth(event, '2');
+  updateBackgroundColor(event, 2);
 });
 
 document.getElementById("button3").addEventListener("click", function(event) {
 	changeWidth(event, '3');
+  updateBackgroundColor(event, 3);
 });
 
 document.getElementById("button4").addEventListener("click", function(event) {
 	changeWidth(event, '4');
+  updateBackgroundColor(event, 4);
 });
