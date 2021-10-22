@@ -41,26 +41,6 @@ button {
   max-width: 500px;
 }
 
-/*
-.images {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-
-.image {
-  flex-basis: 50%;
-  max-width: 500px;
-}
-
-.image img {
-  width: 100%;
-  max-width: 500px;
-  height: auto;
-}
-*/
-
 h1 {
   text-align: center;
   margin-top: 25px;
