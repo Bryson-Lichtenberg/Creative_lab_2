@@ -23,19 +23,19 @@ button {
 }
 
 .images {
+  margin: auto;
+  width: 1500px;
   justify-content: center;
   column-count: 3;
 }
 
 .image {
   text-align: center;
-  width: fit-content;
-  margin: 0 0 0 0;
+  width: 500px;
 }
 
 .image img {
   height: auto;
-  display: inline-block;
   width: 100%;
   max-width: 500px;
 }
@@ -45,15 +45,16 @@ button {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
 }
 
 .image {
   flex-basis: 50%;
-  width: fit-content;
+  max-width: 500px;
 }
 
 .image img {
-  width: fit-content;
+  width: 100%;
   max-width: 500px;
   height: auto;
 }

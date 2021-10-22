@@ -18,19 +18,14 @@ for (let i = 0; i < numImages; i++) {
 }
 
 // called by button handlers to change column count
-var changeWidth = function(event, width) {
+var changeWidth = function(event, numCols) {
 	event.preventDefault();
-	document.getElementById("images").style.columnCount = width;
+	document.getElementById("images").style.columnCount = numCols;
+	var newWidth = parseInt(width) * numCols;
+	document.getElementById("images").style.width = newWidth.toString() + 'px';
 };
 
 // button listeners
-/*
-document.getElementById("button1").addEventListener("click", function(event) {
-	event.preventDefault();
-	document.getElementById("images").style.columnCount = '1';
-});
-*/
-
 document.getElementById("button1").addEventListener("click", function(event) {
 	changeWidth(event, '1');
 });
