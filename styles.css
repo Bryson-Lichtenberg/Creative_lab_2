@@ -69,3 +69,12 @@ h1 {
 body {
   background-color: #FAEAFF;
 }
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #FAEAFF;
+  text-align: center;
+}
