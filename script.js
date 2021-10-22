@@ -17,8 +17,32 @@ for (let i = 0; i < numImages; i++) {
 		});
 }
 
+// called by button handlers to change column count
+var changeWidth = function(event, width) {
+	event.preventDefault();
+	document.getElementById("images").style.columnCount = width;
+};
+
 // button listeners
+/*
 document.getElementById("button1").addEventListener("click", function(event) {
 	event.preventDefault();
 	document.getElementById("images").style.columnCount = '1';
+});
+*/
+
+document.getElementById("button1").addEventListener("click", function(event) {
+	changeWidth(event, '1');
+});
+
+document.getElementById("button2").addEventListener("click", function(event) {
+	changeWidth(event, '2');
+});
+
+document.getElementById("button3").addEventListener("click", function(event) {
+	changeWidth(event, '3');
+});
+
+document.getElementById("button4").addEventListener("click", function(event) {
+	changeWidth(event, '4');
 });

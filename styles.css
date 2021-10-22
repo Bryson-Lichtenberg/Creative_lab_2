@@ -24,20 +24,40 @@ button {
 
 .images {
   justify-content: center;
-  display: flex;
-  flex-wrap: wrap;
+  column-count: 3;
 }
 
 .image {
-  display: inline-block;
-  height: auto;
-  flex-basis: 30%;
+  text-align: center;
+  width: fit-content;
+  margin: 0 0 0 0;
 }
 
 .image img {
+  height: auto;
+  display: inline-block;
   width: 100%;
   max-width: 500px;
 }
+
+/*
+.images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.image {
+  flex-basis: 50%;
+  width: fit-content;
+}
+
+.image img {
+  width: fit-content;
+  max-width: 500px;
+  height: auto;
+}
+*/
 
 h1 {
   text-align: center;
