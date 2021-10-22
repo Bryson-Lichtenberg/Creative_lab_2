@@ -22,6 +22,23 @@ button {
   justify-content: center;
 }
 
+.images {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.image {
+  display: inline-block;
+  height: auto;
+  flex-basis: 30%;
+}
+
+.image img {
+  width: 100%;
+  max-width: 500px;
+}
+
 h1 {
   text-align: center;
   margin-top: 25px;
